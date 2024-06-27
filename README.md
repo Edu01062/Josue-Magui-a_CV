@@ -1,2 +1,2 @@
-# Josue-Magui-a_CV
+# Josue-Maguina_CV
 Este respositorio sirve para alojar mi CV
