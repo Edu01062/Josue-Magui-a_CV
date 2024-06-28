@@ -25,8 +25,6 @@
   --accent-color: #0078ff; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
-
-
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -1039,7 +1037,7 @@ section,
   right: 50px;
   font-size: 24px;
   top: calc(50% - 14px);
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, var (--default-color), transparent 30%);
   transition: 0.3s;
   line-height: 0;
 }
@@ -1154,7 +1152,7 @@ section,
 }
 
 .faq .faq-container .faq-active h3 {
-  color: var(--accent-color);
+  color: var (--accent-color);
 }
 
 .faq .faq-container .faq-active .faq-content {
@@ -1626,4 +1624,67 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+/*--------------------------------------------------------------
+# Custom Styles for About Section
+--------------------------------------------------------------*/
+.about section {
+  padding: 60px 0;
+}
+
+.about .about-info {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.about .skills-content {
+  margin-top: 20px;
+}
+
+.about .progress {
+  background: #e9ecef;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.about .progress .skill {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.about .progress .val {
+  font-weight: bold;
+}
+
+.about .about-me,
+.about .about-info,
+.about .skills-content {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.about .about-me p,
+.about .about-info p,
+.about .skills-content h5 {
+  margin: 0;
+  padding: 5px 0;
+}
+
+img.rounded-circle {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-top: 20px;
 }
